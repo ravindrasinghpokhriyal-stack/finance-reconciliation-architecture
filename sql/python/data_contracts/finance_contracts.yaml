@@ -1,0 +1,23 @@
+transaction_id:
+  datatype: string
+  required: true
+  unique: true
+
+amount:
+  datatype: decimal
+  min_value: 0
+
+currency:
+  datatype: string
+  allowed:
+    - AED
+    - USD
+    - EUR
+
+posting_date:
+  datatype: date
+  future_date_allowed: false
+
+account_code:
+  datatype: string
+  required: true
